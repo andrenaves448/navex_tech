@@ -1,0 +1,321 @@
+/* CSS Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  header#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .content h1 span#palavra-dinamica {
+    color: #00ffff;
+  }
+  
+  .content p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Layout padrão das seções */
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Títulos padrão */
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #00ffff;
+    text-align: center;
+  }
+  
+  /* SERVIÇOS */
+  .servico-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .servico {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,255,255,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .servico:hover {
+    transform: translateY(-5px);
+  }
+  
+  .servico h3 {
+    color: #00ffff;
+    margin-bottom: 1rem;
+  }
+  
+  /* PROJETOS */
+  .projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .projeto {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,255,255,0.1);
+  }
+  
+  .projeto h3 {
+    color: #00ffff;
+    margin-bottom: 1rem;
+  }
+  
+  /* CONTATO */
+  .formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .formulario-contato input,
+  .formulario-contato textarea {
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  .formulario-contato input::placeholder,
+  .formulario-contato textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .formulario-contato button {
+    background-color: #00aaff;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formulario-contato button:hover {
+    background-color: #0088cc;
+  }
+  
+  /* ÍCONES SOCIAIS */
+  .social-icons {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons a {
+    color: #ccc;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #00ffff;
+    transform: scale(1.2);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .servico, .projeto {
+      width: 100%;
+    }
+  }
+  
+  .portfolio-sub {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Título fora da faixa escura */
+  .portfolio-title {
+    background-color: transparent;
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+  }
+  
+  .portfolio-title h2 {
+    font-size: 2rem;
+    color: #00ffff;
+  }
+  
+  /* Seção dos logos com fundo escuro em largura total */
+  #portfolio {
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 10rem 0;;
+  }
+  
+  #portfolio .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* Logos */
+  .portfolio-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: grayscale(30%);
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .portfolio-logos img {
+    max-height: 50px;
+    object-fit: contain;
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px #00ffff);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-logos img:hover {
+    filter: grayscale(0%) brightness(100%);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  .logo-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .logo-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .scroll-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .scroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+  
+  
+.whatsapp-button {
+  position: fixed;
+  bottom: 80px; /* Distância do rodapé */
+  right: 25px;
+  z-index: 9999;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(0.95);
+}
+
+
+.whatsapp-button.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.whatsapp-button img {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Animação sutil */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

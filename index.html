@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img_logo/matrix_1.png" type="image/png">
+  
+    <title>Navex Tech - Soluções Digitais Personalizadas</title>
+  
+    <!-- SEO (Google / Bing) -->
+    <meta name="description" content="Desenvolvemos sistemas web, sites modernos e integrações inteligentes com APIs para o seu negócio.">
+  
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Navex Tech - Soluções Digitais Personalizadas">
+    <meta property="og:description" content="Desenvolvemos sistemas web, sites modernos e integrações inteligentes com APIs para o seu negócio.">
+    <meta property="og:image" content="https://navextech.com.br/img_logo/matrix_1.png">
+    <meta property="og:url" content="https://navextech.com.br">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Navex Tech - Soluções Digitais Personalizadas">
+    <meta name="twitter:description" content="Desenvolvemos sistemas web, sites modernos e integrações inteligentes com APIs para o seu negócio.">
+    <meta name="twitter:image" content="https://navextech.com.br/img_logo/matrix_1.png">
+  
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  
+<body>
+
+  <!-- Hero com logo incluso -->
+  <header id="hero" style="position: relative;">
+    <!-- LOGO FIXADO NO CANTO SUPERIOR ESQUERDO -->
+    <img src="img_logo/matrix_1.png"
+         alt="Logo"
+         style="height: 400px; position: absolute; top: -98px; left: 30px; object-fit: contain; z-index: 10;filter: contrast(120%) brightness(115%) saturate(130%);">
+  
+    <!-- CONTEÚDO CENTRALIZADO -->
+    <div class="content">
+      <h1>
+        <span id="titulo-fixo">Desenvolvendo</span>
+        <span id="palavra-dinamica">websites</span>
+      </h1>
+      <p style="color: #ffffff;">Inovação e tecnologia na criação de soluções digitais.</p>
+    </div>
+  </header>
+  
+
+  <section id="servicos">
+    <h2 class="scroll-hidden">Serviços</h2>
+    <div class="servico-lista">
+      <div class="servico scroll-hidden">
+        <h3>Criação de Sites</h3>
+        <p>Sites modernos, responsivos e otimizados para resultados.</p>
+      </div>
+      <div class="servico scroll-hidden">
+        <h3>Sistemas Web</h3>
+        <p>Desenvolvimento de sistemas sob medida para o seu negócio.</p>
+      </div>
+      <div class="servico scroll-hidden">
+        <h3>APIs & Integrações</h3>
+        <p>Conexões com sistemas externos para automatizar processos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Título fora da faixa escura -->
+  <section class="portfolio-title">
+    <h2 class="scroll-hidden">Empresas que cresceram com a gente</h2>
+  </section>
+  
+  <!-- Seção com faixa escura e container dentro -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-logos">
+        <img src="img_empresas/tauros.png" alt="Empresa 1" class="scroll-hidden">
+        <!-- outros logos aqui -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2 class="scroll-hidden">Envie sua solicitação</h2>
+    <form action="enviar_email.php" method="POST" class="formulario-contato scroll-hidden">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="text" name="telefone" id="telefone" placeholder="Seu telefone" maxlength="15" required>
+      <span id="erro-telefone" style="color: red; display: none;">Número inválido</span>
+      <textarea name="mensagem" rows="5" placeholder="Descreva sua solicitação" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-icons scroll-hidden">
+      <a href="https://www.instagram.com/navex_tech" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/company/navex-tech" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="scroll-hidden">Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Scripts externos -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+  <script src="script.js"></script>
+  
+  <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/551152863341" 
+       class="whatsapp-button" 
+       target="_blank" 
+       aria-label="Fale conosco no WhatsApp">
+      <img src="img/whatsapp (1).png" alt="WhatsApp" />
+    </a>
+</body>
+</html>
